@@ -1,0 +1,27 @@
+<button type="button"><a href="/logout" data-method="delete">Logout</a></button>
+<button type="button"><a href="/ideas">Bright Ideas</a></button>
+
+<!-- Start Idea Content -->
+<a href="/users/<%= @idea.user.id %>"><%= @idea.user.alias %><span>says</span></a>
+<div id="ideaBox"><%= @idea.content %></div>
+<!-- End Idea Content -->
+
+<!-- Start Likes' Users -->
+<h4>People who liked this post:</h4>
+<table>
+  <thead>
+    <tr>
+      <th>Alias</th>
+      <th>Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @users.each do |user| %>
+    <tr>
+      <td><a href="/users/<%= user.id %>"><%= user.alias.titleize %></a></td>
+      <td><%= user.name.titleize %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+<!-- End Likes' Users -->

@@ -1,0 +1,12 @@
+<button type="button"><a href="/logout" data-method="delete">Logout</a></button>
+<button type="button"><a href="/ideas">Bright Ideas</a></button>
+<div>
+  <p>Name: <%= @user.name.upcase %></p>
+  <p>Alias: <%= @user.alias.upcase %></p>
+  <p>Email: <%= @user.email %></p>
+</div>
+<hr>
+<div>
+    <p>Total Number of Posts: <%= @user.ideas.count %></p>
+    <p>Total Number of Likes: <%= @user.likes.count %></p>
+</div>
