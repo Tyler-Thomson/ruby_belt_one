@@ -1,3 +1,3 @@
-== README
+== users_and_ideas
 
-This is a RoR app I made while I was learning the stack. Users can post ideas they have, and other users can like the ideas.
+This is a RoR app I made while I was learning the stack. Users can post ideas they have, and other users can like their ideas.
